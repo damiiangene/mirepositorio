@@ -1,0 +1,227 @@
+/*
+!important = aplica a las propiedades y pisa todo orden jerarquico
+
+ID= unico e irrepetible / DNI / IMEI / PATENTE DE UN AUTO
+class= se pueden repetir y utilizar más de una vez
+
+etiquetas/selectores = etiquetas semánticas del html.
+
+*/
+
+
+/*selector/id/clase {
+    propiedad: valor;
+}*/
+
+/*LLAMADO AL DOC HTML*/
+/*ESTILOS RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    max-width: 1800px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+li , ul {
+    display: inline-block;
+}
+#navBar figure{
+    width: 60px;
+    height: 60px;
+    margin: 0%;
+}
+#navBar img {
+    width: 100%;
+    height: 100%;
+}
+
+#body {
+    max-width: 1800px;
+}
+
+
+/*ESTILOS MAIN*/
+#main {
+    width: 100%;
+    margin-top: 10px;
+    min-height: 100vh;
+    padding: 0 90px
+}
+.hover-text:hover {
+    color: gold;
+    background-color: rgba(255, 215, 0, 0.2);
+    padding: 5px;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+/*ESTILOS BANNER*/
+.main__banner {
+    width: 100%;
+    height: 280px;
+    background-image: url("images/bann.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+/*ESTILOS HEADER/NAV*/
+#header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color:gold;
+}
+
+
+
+#navBar {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.navBarLogoImg{
+    width: 80px;
+    }
+
+.navBar-ul {
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+}
+.navBar-ul li {
+    margin: 0 15px;
+}
+
+/*ESTILOS GRILLAS INDEX MAIN*/
+.section__grid{
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+    /*LO SIGUIENTE REPRESENTA FILAS Y COLUMNAS 3*3*/
+    "img1   inicio__contenido1  inicio__contenido1-p"
+    "inicio__contenido2-p   inicio__contenido2 img2"
+    "img3   inicio__contenido3  inicio__contenido3-p";
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.section__grid img{
+    width: 100%;
+    height: 100%;
+}
+
+.img1{
+    grid-area: img1;
+    object-fit: contain;
+}
+.inicio__contenido1{
+    grid-area: inicio__contenido1;
+}
+.inicio__contenido1-p{
+    grid-area: inicio__contenido1-p;
+}
+.img2{
+    grid-area: img2;
+    object-fit: contain;
+}
+.inicio__contenido2{
+    grid-area: inicio__contenido2;
+}
+.inicio__contenido2-p{
+    grid-area: inicio__contenido2-p;
+}
+.img3{
+    grid-area: img3;
+    object-fit: contain;
+}
+.inicio__contenido3{
+    grid-area: inicio__contenido3;
+}
+.inicio__contenido3-p{
+    grid-area: inicio__contenido3-p;
+}
+
+@media (max-width:1200px) {
+    .section__grid{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas:
+        "img1   inicio__contenido1"
+        "inicio__contenido1-p   inicio__contenido1-p"
+        "img2   inicio__contenido2"
+        "inicio__contenido2-p   inicio__contenido2-p"
+        "img3   inicio__contenido3"
+        "inicio__contenido3-p   inicio__contenido3-p";
+    }
+}
+
+
+/*ESTILOS FOOTER*/
+#footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background-color:gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer__logo-pictureimg{
+    width: 100px;
+}
+.footer__links-ul, .footer__links-copyright{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.footer__links-ul li {
+    display: block;
+}
+.footer__redes {
+    display: flex;
+    justify-content: center; /* Centra los iconos */
+}
+.footer__redes img {
+    width: 40px;
+}
+.footer__redes i{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:576px) {
+    #navBar {
+        flex-direction: column;
+    }
+    #navBar ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+/*BREAKPOINT:
+
+MOVIL: 600px
+TABLET: 800px
+DESKTOP/ESCRITORIO= 1200px/1400px
+*/
