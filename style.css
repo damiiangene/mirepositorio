@@ -78,6 +78,7 @@ li , ul {
     height: auto;
     position: fixed;
     background-color:gold;
+    top: 0;
 }
 
 
