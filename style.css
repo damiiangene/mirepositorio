@@ -49,8 +49,9 @@ li , ul {
 
 /*ESTILOS MAIN*/
 #main {
-    width: 100%;
+    background-color: #f8f9fa;
     margin-top: 10px;
+    width: 100%;
     min-height: 100vh;
     padding: 0 90px
 }
@@ -108,7 +109,7 @@ li , ul {
 /*ESTILOS GRILLAS INDEX MAIN*/
 .section__grid{
     display: grid;
-    width: 1000px;
+    width: auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 200px);
     grid-template-areas:
