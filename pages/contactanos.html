@@ -38,23 +38,26 @@
 
     <!--ESTRUCTURA N°2= MAIN-->
     <main id="main" class="container my-5">
-        <h1 class="text-center mb-4">Página de Contacto</h1>
+        <h1 class="text-center mb-4">Dejanos tu mensaje</h1>
         
         <form action="" class="row g-3">
             <fieldset class="col-12">
-                <legend class="mb-3">Datos Personales</legend>
+                <legend class="mb-3">Tus datos</legend>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" id="nombre" class="form-control" placeholder="Introduce tu nombre" required>
+                    <input type="text" id="nombre" class="form-control" placeholder="Introduci tu nombre completo" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" class="form-control" placeholder="Introduce tu email" required>
+                    <input type="email" id="email" class="form-control" placeholder="Introduci tu email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="celular" id="celular" class="form-control" placeholder="Introduci el número de tu celular sin espacios" required>
                 </div>
             </fieldset>
     
             <fieldset class="col-12">
-                <legend class="mb-3">Datos de Compra</legend>
                 <h2 class="mb-3">Tipo de Compra</h2>
                 <div class="form-check">
                     <input type="radio" class="form-check-input" id="online" name="tipoCompra" value="online">
@@ -65,18 +68,23 @@
                     <label for="tienda" class="form-check-label">Tienda</label>
                 </div>
                 <div class="mb-3">
-                    <label for="talles" class="form-label">Talle</label>
-                    <select id="talles" class="form-select" required>
-                        <option value="">Selecciona un talle</option>
-                        <option value="S">SMALL</option>
-                        <option value="M">MEDIUM</option>
-                        <option value="L">LARGE</option>
-                        <option value="XL">EXTRA LARGE</option>
-                        <option value="XXL">EXTRA EXTRA LARGE</option>
+                    <label for="modeloCel" class="form-label">Modelo del celular</label>
+                    <select id="modeloCel" class="form-select" required>
+                        <option value="">Selecciona el modelo para tu funda</option>
+                        <option value="iphone">Iphone</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="huawei">Huawei</option>
+                        <option value="xiaomi">Xiaomi</option>
+                        <option value="nokia">Nokia</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <label for="detalle" class="form-label">Detallanos más sobre la elección de tu funda</label>
+                    <textarea id="detalle" class="form-control" rows="3" placeholder="Modelo especifico de celular y diseño de tu funda"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="comentarios" class="form-label">Deja tu comentario</label>
                     <textarea id="comentarios" class="form-control" rows="3" placeholder="Escribe tus comentarios aquí..."></textarea>
                 </div>
             </fieldset>
