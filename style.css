@@ -53,7 +53,7 @@ li , ul {
     margin-top: 10px;
     width: 100%;
     min-height: 100vh;
-    padding: 0 90px
+    padding: 0 90px;
 }
 .hover-text:hover {
     color: gold;
@@ -140,6 +140,7 @@ li , ul {
 .section__grid img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .img1{
@@ -185,6 +186,21 @@ li , ul {
         "inicio__contenido2-p   inicio__contenido2-p"
         "img3   inicio__contenido3"
         "inicio__contenido3-p   inicio__contenido3-p";
+    }
+}
+
+@media (max-width: 768px) {
+    .section__grid {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+        padding: 0 10px; /* Añadir padding a los lados */
+    }
+
+    #main {
+        padding: 0 20px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .main__titulo {
+        font-size: 2em; /* Ajusta el tamaño de fuente para pantallas pequeñas */
     }
 }
 
