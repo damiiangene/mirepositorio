@@ -35,7 +35,7 @@ li , ul {
 #navBar figure{
     width: 60px;
     height: 60px;
-    margin: 0%;
+    margin: 0;
 }
 #navBar img {
     width: 100%;
@@ -54,6 +54,7 @@ li , ul {
     width: 100%;
     min-height: 100vh;
     padding: 0 10px;
+    text-align: center;
 }
 .hover-text:hover {
     color: gold;
@@ -139,7 +140,7 @@ li , ul {
 
 .section__grid img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
 }
 
