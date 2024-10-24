@@ -191,16 +191,16 @@ li , ul {
 
 @media (max-width: 768px) {
     .section__grid {
-        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
-        padding: 0 10px; /* Añadir padding a los lados */
+        grid-template-columns: 1fr;
+        padding: 0 10px;
     }
 
     #main {
-        padding: 0 20px; /* Reduce el padding en pantallas pequeñas */
+        padding: 0 20px;
     }
 
     .main__titulo {
-        font-size: 2em; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        font-size: 2em;
     }
 }
 
@@ -231,7 +231,7 @@ li , ul {
 }
 .footer__redes {
     display: flex;
-    justify-content: center; /* Centra los iconos */
+    justify-content: center
 }
 .footer__redes img {
     width: 40px;
