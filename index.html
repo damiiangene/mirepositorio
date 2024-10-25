@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ESTILOS CSS-->
-    <!--LIBRERIA FONT AWESOME-->
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!--LIBRERIA BTS-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
     <title>Inicio</title>
 </head>
 <body id="body">
-    <!--ESTRUCTURA N°1= HEADER / NAV-->
+    <!-- ESTRUCTURA N°1= HEADER / NAV -->
     <header id="header"> 
-        <!--CABECERA DEL SITIO / NAVEGACION-->
         <nav id="navBar">
             <figure class="navBarLogo">
                 <img class="navBarLogoImg" src="images/logo.png" alt="logo sitio">
@@ -33,46 +27,41 @@
         </nav>
     </header>
 
-    <!--BANNER DEL SITIO-->
-    <section class="main__banner">
-    </section>
+    <!-- BANNER DEL SITIO -->
+    <section class="main__banner"></section>
 
-    <!--ESTRUCTURA N°2= MAIN-->
-    <main id="main"> <!--CONTENIDO DE TODO EL SITIO-->
-
+    <!-- ESTRUCTURA N°2= MAIN -->
+    <main id="main">
         <h1 class="main__titulo">BIENVENIDO A NUESTRAS OFERTAS</h1>
-
         <section class="section__grid">
-        <picture>
-            <img class="img1 img-fluid" src="images/ofertasIncreibles.jpg" alt="">
-        </picture>
+            <div class="grid-item">
+                <img class="img1 img-fluid" src="images/ofertasIncreibles.jpg" alt="">
+                <h2 class="inicio__contenido1"><span class="hover-text">OFERTAS INCREIBLES</span></h2>
+                <p class="inicio__contenido1-p">Descubre una amplia variedad de fundas para proteger tu dispositivo sin sacrificar el estilo. Con descuentos exclusivos, podrás elegir entre diseños modernos, clásicos y personalizados que se adaptan a tu gusto. No te pierdas la oportunidad de renovar la apariencia de tu celular y mantenerlo a salvo de golpes y rasguños.</p>
+            </div>
 
-        <h2 class="inicio__contenido1"><span class="hover-text">OFERTAS INCREIBLES</span></h2>
+            <div class="grid-item">
+                <img class="img2 img-fluid" src="images/desSegUnidad.jpg" alt="">
+                <h2 class="inicio__contenido2"><span class="hover-text">40% EN LA SEGUNDA UNIDAD</span></h2>
+                <p class="inicio__contenido2-p">No esperes más, aprovecha esta oportunidad y dale a tu celular el estilo que se merece. Las ofertas son por tiempo limitado, así que asegúrate de conseguir la tuya antes de que se agoten. ¡Transforma tu celular hoy mismo!</p>
+            </div>
 
-        <p class="inicio__contenido1-p">Descubre una amplia variedad de fundas para proteger tu dispositivo sin sacrificar el estilo. Con descuentos exclusivos, podrás elegir entre diseños modernos, clásicos y personalizados que se adaptan a tu gusto. No te pierdas la oportunidad de renovar la apariencia de tu celular y mantenerlo a salvo de golpes y rasguños.</p>
+            <div class="grid-item">
+                <img class="img3 img-fluid" src="images/diseñaTuFunda.jpg" alt="">
+                <h2 class="inicio__contenido3"><span class="hover-text">DISEÑA TU FUNDA</span></h2>
+                <p class="inicio__contenido3-p">Expresa tu estilo personal eligiendo entre una amplia gama de colores, patrones y materiales. Puedes personalizar tu funda con tus fotos, textos y gráficos favoritos. No hay mejor manera de hacer que tu celular sea verdaderamente tuyo.</p>
+            </div>
 
-
-        <picture>
-            <img class="img2 img-fluid" src="images/desSegUnidad.jpg" alt="">
-        </picture>
-
-        <h2 class="inicio__contenido2"><span class="hover-text">40% EN LA SEGUNDA UNIDAD</span></h2>
-
-        <p class="inicio__contenido2-p">No esperes más, aprovecha esta oportunidad y dale a tu celular el estilo que se merece. Las ofertas son por tiempo limitado, así que asegúrate de conseguir la tuya antes de que se agoten. ¡Transforma tu celular hoy mismo!</p>
-
-
-        <picture>
-            <img class="img3 img-fluid" src="images/diseñaTuFunda.jpg" alt="">
-        </picture>
-
-        <h2 class="inicio__contenido3"><DISEÑA class="hover-text">DISEÑA TU FUNDA</span></h2>
-
-        <p class="inicio__contenido3-p">Expresa tu estilo personal eligiendo entre una amplia gama de colores, patrones y materiales. Puedes personalizar tu funda con tus fotos, textos y gráficos favoritos. No hay mejor manera de hacer que tu celular sea verdaderamente tuyo.</p>
+            <div class="grid-item">
+                <img class="img4 img-fluid" src="images/nuevaLinea.jpg" alt="">
+                <h2 class="inicio__contenido4"><span class="hover-text">NUEVAS LÍNEAS</span></h2>
+                <p class="inicio__contenido4-p">Explora nuestras nuevas líneas de productos que combinan innovación y estilo. Cada funda está diseñada para ofrecer la mejor protección sin sacrificar la estética.</p>
+            </div>
         </section>
     </main>
 
-    <!--ESTRUCTURA N°3= FOOTER-->
-    <footer id="footer"> <!--PIE DE PAGINA-->
+    <!-- ESTRUCTURA N°3= FOOTER -->
+    <footer id="footer">
         <section class="footer__logo">
             <picture class="footer__logo-picture">
                 <img class="footer__logo-pictureimg" src="images/logo.png" alt="">
@@ -80,7 +69,6 @@
         </section>
 
         <section class="footer__links">
-
             <ul class="footer__links-ul">
                 <li><a href="#">INICIO</a></li>
                 <li><a href="pages/fundas.html">FUNDAS</a></li>
@@ -95,19 +83,22 @@
         </section>
 
         <section class="footer__redes">
-            <!--se direccionan a un lugar simbolico-->
             <a href="https://www.facebook.com" target="_blank">
-            <i class="fa-brands fa-facebook-f"></i></a>
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
             <a href="https://www.youtube.com" target="_blank">
-            <i class="fa-brands fa-youtube"></i></a>
+                <i class="fa-brands fa-youtube"></i>
+            </a>
             <a href="https://twitter.com" target="_blank">
-            <i class="fa-brands fa-x-twitter"></i></a>
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
             <a href="https://www.instagram.com" target="_blank">
-            <i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </a>
         </section>
     </footer>
 
-    <!--SCRIPT BTS-->
+    <!-- SCRIPT BTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

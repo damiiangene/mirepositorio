@@ -27,16 +27,19 @@ etiquetas/selectores = etiquetas semánticas del html.
 
 a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-li , ul {
+
+li, ul {
     display: inline-block;
 }
-#navBar figure{
+
+#navBar figure {
     width: 60px;
     height: 60px;
     margin: 0;
 }
+
 #navBar img {
     width: 100%;
     height: 100%;
@@ -46,8 +49,7 @@ li , ul {
     max-width: 1800px;
 }
 
-
-/*ESTILOS MAIN*/
+/* ESTILOS MAIN */
 #main {
     background-color: #f8f9fa;
     margin-top: 10px;
@@ -55,6 +57,7 @@ li , ul {
     min-height: 100vh;
     padding: 0 10px;
 }
+
 .hover-text:hover {
     color: gold;
     background-color: rgba(255, 215, 0, 0.2);
@@ -79,7 +82,7 @@ li , ul {
     background-color: rgba(255, 215, 0, 0.4);
 }
 
-/*ESTILOS BANNER*/
+/* ESTILOS BANNER */
 .main__banner {
     width: 100%;
     height: 280px;
@@ -89,19 +92,17 @@ li , ul {
     background-position: center;
     padding-top: 80px;
 }
-/*ESTILOS HEADER/NAV*/
+
+/* ESTILOS HEADER/NAV */
 #header {
     width: 100%;
     height: auto;
     position: fixed;
-    background-color:gold;
+    background-color: gold;
     top: 0;
 }
 
-
-
 #navBar {
-
     width: 100%;
     height: 100%;
     display: flex;
@@ -109,83 +110,43 @@ li , ul {
     justify-content: space-between;
     padding: 0 20px;
 }
-.navBarLogoImg{
+
+.navBarLogoImg {
     width: 80px;
-    }
+}
 
 .navBar-ul {
     text-align: center;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
+
 .navBar-ul li {
     margin: 0 15px;
 }
 
-/*ESTILOS GRILLAS INDEX MAIN*/
-.section__grid{
+/* ESTILOS GRILLAS INDEX MAIN */
+.section__grid {
     display: grid;
-    width: auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas:
-    /*LO SIGUIENTE REPRESENTA FILAS Y COLUMNAS 3*3*/
-    "img1   inicio__contenido1  inicio__contenido1-p"
-    "inicio__contenido2-p   inicio__contenido2 img2"
-    "img3   inicio__contenido3  inicio__contenido3-p";
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grilla responsiva */
+    grid-template-rows: auto;
     column-gap: 20px;
     row-gap: 20px;
 }
 
-.section__grid img{
+.grid-item {
+    text-align: center;
+}
+
+.section__grid img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
 }
 
-.img1{
-    grid-area: img1;
-    object-fit: contain;
-}
-.inicio__contenido1{
-    grid-area: inicio__contenido1;
-}
-.inicio__contenido1-p{
-    grid-area: inicio__contenido1-p;
-}
-.img2{
-    grid-area: img2;
-    object-fit: contain;
-}
-.inicio__contenido2{
-    grid-area: inicio__contenido2;
-}
-.inicio__contenido2-p{
-    grid-area: inicio__contenido2-p;
-}
-.img3{
-    grid-area: img3;
-    object-fit: contain;
-}
-.inicio__contenido3{
-    grid-area: inicio__contenido3;
-}
-.inicio__contenido3-p{
-    grid-area: inicio__contenido3-p;
-}
-
-@media (max-width:1200px) {
-    .section__grid{
-        width: 100%;
+@media (max-width: 1200px) {
+    .section__grid {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 200px);
-        grid-template-areas:
-        "img1   inicio__contenido1"
-        "inicio__contenido1-p   inicio__contenido1-p"
-        "img2   inicio__contenido2"
-        "inicio__contenido2-p   inicio__contenido2-p"
-        "img3   inicio__contenido3"
-        "inicio__contenido3-p   inicio__contenido3-p";
     }
 }
 
@@ -204,48 +165,55 @@ li , ul {
     }
 }
 
-
-/*ESTILOS FOOTER*/
+/* ESTILOS FOOTER */
 #footer {
     width: 100%;
     height: auto;
     margin-top: 10px;
-    background-color:gold;
+    background-color: gold;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.footer__logo-pictureimg{
+
+.footer__logo {
+    text-align: center;
+}
+
+.footer__logo-pictureimg {
     width: 100px;
 }
-.footer__links-ul, .footer__links-copyright{
+
+.footer__links-ul, .footer__links-copyright {
     text-align: center;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
+
 .footer__links-ul li {
     display: block;
 }
+
 .footer__redes {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
-.footer__redes img {
-    width: 40px;
-}
-.footer__redes i{
+
+.footer__redes i {
     font-size: 25px;
     margin-left: 15px;
 }
 
-@media screen and (max-width:576px) {
+/* MEDIA QUERY PARA NAVEGACIÓN EN MÓVILES */
+@media screen and (max-width: 576px) {
     #navBar {
-        flex-direction: column;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     }
-    #navBar ul{
+
+    #navBar ul {
         width: 100%;
         flex-direction: column;
         justify-content: flex-start;
