@@ -36,8 +36,57 @@
     </section>
 
     <!--ESTRUCTURA N°2= MAIN-->
-    <main id="main"> <!--CONTENIDO DE TODO EL SITIO-->
-        <!--COMPLETAR EL MAIN PERSONALIZANDO CON LO QUE NECESITO EN CADA PAGINA-->
+    <main id="main" class="container my-5">
+        <h1 class="text-center mb-4 main__titulo">Nuestras Fundas</h1>
+        <div class="row">
+            <!-- Tarjetas de fundas -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-light shadow-sm">
+                    <img src="images/funda1.jpg" class="card-img-top" alt="Funda 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Funda Premium</h5>
+                        <p class="card-text">Precio: $19.99</p>
+                        <label for="modelo1" class="form-label">Modelo de Celular</label>
+                        <select id="modelo1" class="form-select mb-3">
+                            <option value="">Selecciona el modelo</option>
+                            <option value="iphone">Iphone</option>
+                            <option value="samsung">Samsung</option>
+                        </select>
+                        <label for="cantidad1" class="form-label">Cantidad</label>
+                        <select id="cantidad1" class="form-select mb-3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="btn btn-primary">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para más fundas -->
+            <div class="col-md-4 mb-4">
+                <div class="card border-light shadow-sm">
+                    <img src="images/funda2.jpg" class="card-img-top" alt="Funda 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Funda Sport</h5>
+                        <p class="card-text">Precio: $24.99</p>
+                        <label for="modelo2" class="form-label">Modelo de Celular</label>
+                        <select id="modelo2" class="form-select mb-3">
+                            <option value="">Selecciona el modelo</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="huawei">Huawei</option>
+                        </select>
+                        <label for="cantidad2" class="form-label">Cantidad</label>
+                        <select id="cantidad2" class="form-select mb-3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="btn btn-primary">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Añade más tarjetas aquí -->
+        </div>
     </main>
 
     <!--ESTRUCTURA N°3= FOOTER-->

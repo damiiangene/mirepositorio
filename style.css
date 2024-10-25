@@ -134,6 +134,21 @@ li, ul {
     row-gap: 20px;
 }
 
+/* ESTILO DE LAS TARJETAS */
+.card {
+    border: 2px solid #cfc7c7d2;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Efecto al pasar el mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+.card-body {
+    background-color: #1d1abe27; /* Fondo*/
+}
+
 .grid-item {
     text-align: center;
 }
@@ -142,6 +157,16 @@ li, ul {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+/* BOTÓN CON ESTILO */
+.btn-primary {
+    background-color: gold;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: chocolate; /* Color al pasar el mouse */
 }
 
 @media (max-width: 1200px) {
@@ -219,7 +244,6 @@ li, ul {
         justify-content: flex-start;
     }
 }
-
 
 /*BREAKPOINT:
 
