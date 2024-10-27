@@ -148,7 +148,7 @@ li, ul {
 }
 
 .card-body {
-    background-color: #1d1abe27; /* Fondo*/
+    background-color: #1d1abe27;
     padding: 15px;
 }
 
@@ -169,7 +169,7 @@ li, ul {
 }
 
 .btn-primary:hover {
-    background-color: chocolate; /* Color al pasar el mouse */
+    background-color: chocolate;
 }
 
 @media (max-width: 1200px) {
@@ -201,17 +201,17 @@ li, ul {
 .cart-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Espacio entre productos */
-    padding: 10px; /* Opcional: espacio dentro del contenedor */
-    border: 1px solid #cfc7c7d2; /* Opcional: borde para separar productos */
-    border-radius: 8px; /* Bordes redondeados opcionales */
-    background-color: #fff; /* Fondo blanco para cada producto */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cfc7c7d2;
+    border-radius: 8px;
+    background-color: #fff;
 }
 
 .cart-item img {
-    width: 100px; /* Ajusta según tus necesidades */
+    width: 100px;
     height: auto;
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 20px;
 }
 
 .item-details {
