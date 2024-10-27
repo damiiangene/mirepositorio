@@ -52,7 +52,7 @@ li, ul {
 /* ESTILOS MAIN */
 #main {
     background-color: #f8f9fa;
-    margin-top: 10px;
+    margin-top: 45px;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
@@ -191,6 +191,69 @@ li, ul {
     .main__titulo {
         font-size: 2em;
     }
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre productos */
+    padding: 10px; /* Opcional: espacio dentro del contenedor */
+    border: 1px solid #cfc7c7d2; /* Opcional: borde para separar productos */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    background-color: #fff; /* Fondo blanco para cada producto */
+}
+
+.cart-item img {
+    width: 100px; /* Ajusta según tus necesidades */
+    height: auto;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-title {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.quantity-input {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para el botón de pasar a la compra */
+.proceed-btn {
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+}
+
+.proceed-btn:hover {
+    background-color: #218838;
 }
 
 /* ESTILOS FOOTER */

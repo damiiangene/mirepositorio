@@ -38,7 +38,25 @@
     </section>
 
     <!--ESTRUCTURA N°2= MAIN-->
-    <main id="main"> <!--CONTENIDO DE TODO EL SITIO-->
+    <main id="main">
+        <h1 class="text-center main__titulo">Carrito de Compras</h1>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="path/to/product-image.jpg" alt="Producto" class="img-fluid">
+                <div class="item-details">
+                    <h2 class="item-title">Nombre del Producto</h2>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" value="1" min="1" class="quantity-input">
+                    <p class="item-price">Precio: $<span class="price">20.00</span></p>
+                    <button class="btn btn-danger remove-btn">Eliminar producto</button>
+                </div>
+            </div>
+            <!-- Repite div.cart-item para más productos -->
+        </div>
+        <div class="total">
+            <h2>Total: $<span id="total-price">20.00</span></h2>
+            <button class="btn btn-success proceed-btn">Pasar a la compra</button>
+        </div>
     </main>
 
     <!--ESTRUCTURA N°3= FOOTER-->
