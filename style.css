@@ -46,7 +46,7 @@ li, ul {
 }
 
 #body {
-    max-width: auto;
+    max-width: 100%;
 }
 
 /* ESTILOS MAIN */
