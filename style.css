@@ -55,7 +55,7 @@ li, ul {
     margin-top: 10px;
     width: 100%;
     min-height: 100vh;
-    padding: 0 10px;
+    padding: 20px;
 }
 
 .hover-text:hover {
@@ -100,6 +100,7 @@ li, ul {
     position: fixed;
     background-color: gold;
     top: 0;
+    z-index: 1000;
 }
 
 #navBar {
@@ -139,6 +140,7 @@ li, ul {
     border: 2px solid #cfc7c7d2;
     border-radius: 10px; /* Bordes redondeados */
     transition: transform 0.2s; /* Efecto al pasar el mouse */
+    overflow: hidden;
 }
 
 .card:hover {
@@ -147,6 +149,7 @@ li, ul {
 
 .card-body {
     background-color: #1d1abe27; /* Fondo*/
+    padding: 15px;
 }
 
 .grid-item {
