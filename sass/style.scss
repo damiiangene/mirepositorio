@@ -1,0 +1,319 @@
+/*
+!important = aplica a las propiedades y pisa todo orden jerarquico
+
+ID= unico e irrepetible / DNI / IMEI / PATENTE DE UN AUTO
+class= se pueden repetir y utilizar más de una vez
+
+etiquetas/selectores = etiquetas semánticas del html.
+
+*/
+
+
+/*selector/id/clase {
+    propiedad: valor;
+}*/
+
+/*LLAMADO AL DOC HTML*/
+/*ESTILOS RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    max-width: 1800px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li, ul {
+    display: inline-block;
+}
+
+#navBar figure {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+#navBar img {
+    width: 100%;
+    height: 100%;
+}
+
+#body {
+    max-width: 100%;
+}
+
+/* ESTILOS MAIN */
+#main {
+    background-color: #f8f9fa;
+    margin-top: 45px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.hover-text:hover {
+    color: gold;
+    background-color: rgba(255, 215, 0, 0.2);
+    padding: 5px;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+/* ESTILOS H1 */
+.main__titulo {
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 215, 0, 0.2);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.main__titulo:hover {
+    background-color: rgba(255, 215, 0, 0.4);
+}
+
+/* ESTILOS BANNER */
+.main__banner {
+    width: 100%;
+    height: 280px;
+    background-image: url("../images/bann.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+}
+
+/* ESTILOS HEADER/NAV */
+#header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: gold;
+    top: 0;
+    z-index: 1000;
+}
+
+#navBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navBarLogoImg {
+    width: 80px;
+}
+
+.navBar-ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar-ul li {
+    margin: 0 15px;
+}
+
+/* ESTILOS GRILLAS INDEX MAIN */
+.section__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grilla responsiva */
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+/* ESTILO DE LAS TARJETAS */
+.card {
+    border: 2px solid #cfc7c7d2;
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Efecto al pasar el mouse */
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+.card-body {
+    background-color: #1d1abe27;
+    padding: 15px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.section__grid img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* BOTÓN CON ESTILO */
+.btn-primary {
+    background-color: gold;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: chocolate;
+}
+
+@media (max-width: 1200px) {
+    .section__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section__grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    #main {
+        padding: 0 20px;
+    }
+
+    .main__titulo {
+        font-size: 2em;
+    }
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #cfc7c7d2;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-title {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.quantity-input {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para el botón de pasar a la compra */
+.proceed-btn {
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+}
+
+.proceed-btn:hover {
+    background-color: #218838;
+}
+
+/* ESTILOS FOOTER */
+#footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    text-align: center;
+}
+
+.footer__logo-pictureimg {
+    width: 100px;
+}
+
+.footer__links-ul, .footer__links-copyright {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__links-ul li {
+    display: block;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__redes i {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+/* MEDIA QUERY PARA NAVEGACIÓN EN MÓVILES */
+@media screen and (max-width: 576px) {
+    #navBar {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    #navBar ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+/*BREAKPOINT:
+
+MOVIL: 600px
+TABLET: 800px
+DESKTOP/ESCRITORIO= 1200px/1400px
+*/
