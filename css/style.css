@@ -86,7 +86,7 @@ li, ul {
 .main__banner {
     width: 100%;
     height: 280px;
-    background-image: url("images/bann.jpg");
+    background-image: url("../images/bann.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
