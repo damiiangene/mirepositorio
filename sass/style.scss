@@ -21,7 +21,6 @@ etiquetas/selectores = etiquetas semánticas del html.
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    max-width: 1800px;
     color: black;
 }
 
@@ -47,6 +46,7 @@ li, ul {
 
 #body {
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ESTILOS MAIN */
