@@ -12,7 +12,6 @@ etiquetas/selectores = etiquetas semánticas del html.
     propiedad: valor;
 }*/
 /*LLAMADO AL DOC HTML*/
-/*ESTILOS RESET CSS*/
 * {
   margin: 0;
   padding: 0;
@@ -32,17 +31,44 @@ ul {
   display: inline-block;
 }
 
-#navBar figure {
+#header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: gold;
+  top: 0;
+  z-index: 1000;
+}
+#header #navBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#header #navBar figure {
   width: 60px;
   height: 60px;
   margin: 0;
 }
-#navBar figure img {
+#header #navBar figure img {
   width: 100%;
   height: 100%;
 }
+#header #navBar .navBarLogoImg {
+  width: 80px;
+}
+#header #navBar .navBar-ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#header #navBar .navBar-ul li {
+  margin: 0 15px;
+}
 
-#body {
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -96,34 +122,6 @@ ul {
   padding-top: 80px;
 }
 
-#header {
-  width: 100%;
-  height: auto;
-  position: fixed;
-  background-color: gold;
-  top: 0;
-  z-index: 1000;
-}
-#header #navBar {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-#header #navBar .navBarLogoImg {
-  width: 80px;
-}
-#header #navBar .navBar-ul {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-#header #navBar .navBar-ul li {
-  margin: 0 15px;
-}
-
 .card {
   border: 2px solid rgba(207, 199, 199, 0.8235294118);
   border-radius: 10px;
@@ -150,6 +148,43 @@ ul {
   background-color: chocolate;
 }
 
+#footer {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#footer .footer__logo {
+  text-align: center;
+}
+#footer .footer__logo .footer__logo-pictureimg {
+  width: 100px;
+}
+#footer .footer__links-ul,
+#footer .footer__links-copyright {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer__links-ul li,
+#footer .footer__links-copyright li {
+  display: block;
+}
+#footer .footer__redes {
+  display: flex;
+  justify-content: center;
+}
+#footer .footer__redes i {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
 @media (max-width: 1200px) {
   .section__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -165,6 +200,31 @@ ul {
   }
   .main__titulo {
     font-size: 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  #navBar {
+    flex-direction: column;
+  }
+  #navBar ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #footer .footer__links-ul {
+    width: 100%;
+    padding: 0;
+  }
+  #footer .footer__links-ul li {
+    margin: 10px 0;
+  }
+  #footer .footer__redes {
+    margin-top: 10px;
   }
 }
 .cart-items {
@@ -218,74 +278,5 @@ ul {
 .cart-items .proceed-btn:hover {
   background-color: #218838;
 }
-
-#footer {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  background-color: gold;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-#footer .footer__logo {
-  text-align: center;
-}
-#footer .footer__logo .footer__logo-pictureimg {
-  width: 100px;
-}
-#footer .footer__links-ul,
-#footer .footer__links-copyright {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-#footer .footer__links-ul li,
-#footer .footer__links-copyright li {
-  display: block;
-}
-#footer .footer__redes {
-  display: flex;
-  justify-content: center;
-}
-#footer .footer__redes i {
-  font-size: 25px;
-  margin-left: 15px;
-}
-
-@media screen and (max-width: 576px) {
-  #navBar {
-    flex-direction: column;
-  }
-  #navBar ul {
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  #footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  #footer .footer__links-ul {
-    width: 100%;
-    padding: 0;
-  }
-  #footer .footer__links-ul li {
-    margin: 10px 0;
-  }
-  #footer .footer__redes {
-    margin-top: 10px;
-  }
-}
-/*BREAKPOINT:
-
-MOVIL: 600px
-TABLET: 800px
-DESKTOP/ESCRITORIO= 1200px/1400px
-*/
 
 /*# sourceMappingURL=style.css.map */

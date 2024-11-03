@@ -1,0 +1,45 @@
+// Variables
+$primary-color: gold;
+
+// Estilos Footer
+#footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .footer__logo {
+        text-align: center;
+
+        .footer__logo-pictureimg {
+            width: 100px;
+        }
+    }
+
+    .footer__links-ul,
+    .footer__links-copyright {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: block;
+        }
+    }
+
+    .footer__redes {
+        display: flex;
+        justify-content: center;
+
+        i {
+            font-size: 25px;
+            margin-left: 15px;
+        }
+    }
+}
