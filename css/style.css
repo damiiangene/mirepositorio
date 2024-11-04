@@ -49,12 +49,12 @@ ul {
 }
 #header #navBar figure {
   width: 60px;
-  height: 60px;
+  height: 100%;
   margin: 0;
 }
 #header #navBar figure img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 #header #navBar .navBarLogoImg {
   width: 80px;
