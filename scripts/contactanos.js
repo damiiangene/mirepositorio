@@ -7,7 +7,7 @@ function guardarFormulario(event) {
     const email = document.getElementById('email').value;
     const mensaje = document.getElementById('mensaje').value;
 
-    // Crear un objeto con los datos del formulario
+    // Crear objeto con datos del formulario
     const formulario = {
         nombre: nombre,
         email: email,
@@ -20,7 +20,7 @@ function guardarFormulario(event) {
     formulariosGuardados.push(formulario);
     localStorage.setItem('formularios', JSON.stringify(formulariosGuardados));
 
-    // Mostrar mensaje de éxito y ocultar el formulario
+    // Mensaje de éxito y ocultar el formulario
     document.getElementById('response-message').style.display = 'block';
     document.getElementById('contact-form').reset();  // Limpiar el formulario
 }
@@ -31,7 +31,7 @@ function inicializarEventos() {
     form.addEventListener('submit', guardarFormulario);  // Asignar el evento de envío del formulario
 }
 
-// Función que se ejecuta al cargar la página
+// Se ejecuta al cargar la página
 document.addEventListener('DOMContentLoaded', function() {
     inicializarEventos();  // Inicializar los eventos
 });
