@@ -20,9 +20,22 @@ function guardarFormulario(event) {
     formulariosGuardados.push(formulario);
     localStorage.setItem('formularios', JSON.stringify(formulariosGuardados));
 
-    // Mensaje de éxito y ocultar el formulario
-    document.getElementById('response-message').style.display = 'block';
-    document.getElementById('contact-form').reset();  // Limpiar el formulario
+    // Mostrar mensaje de éxito
+    mostrarMensajeDeExito();
+
+    // Limpiar el formulario
+    document.getElementById('contact-form').reset();
+}
+
+// Función para mostrar el mensaje de éxito
+function mostrarMensajeDeExito() {
+    const responseMessage = document.getElementById('response-message');
+    responseMessage.style.display = 'block';  // Mostrar el mensaje de éxito
+
+    // Después de 3 segundos, ocultar el mensaje de éxito
+    setTimeout(() => {
+        responseMessage.style.display = 'none';
+    }, 3000);
 }
 
 // Función para inicializar los eventos

@@ -279,4 +279,53 @@ body {
   background-color: #218838;
 }
 
+/* ... */
+
+.grid-item.hovered {
+  transform: scale(1.05);  /* Agrandar un poco la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+/* Mostrar más información */
+.grid-item p {
+  display: none;
+}
+
+.grid-item p.show-more {
+  display: block;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Animación de entrada */
+.grid-item.animacion-cargada {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grid-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animación para los items de la cuadrícula */
+.grid-item.animacion-cargada {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.grid-item {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Efectos de hover para las tarjetas */
+.card.hovered {
+    transform: scale(1.05);  /* Agranda un poco la tarjeta */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Añadir sombra */
+}
+
 /*# sourceMappingURL=style.css.map */
